@@ -1,0 +1,7 @@
+<div .masthead>
+    <div .container>
+        <div .row>
+            <h1 .header>
+                Yesod—a modern framework for blazing fast websites
+            <h2>
+                Fast, stable & spiced with great community
