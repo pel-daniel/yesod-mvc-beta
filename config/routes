@@ -1,4 +1,4 @@
 /static StaticR Static appStatic
 
 / HomeR GET
-/tasks/1 TaskR GET
+/tasks TaskR GET

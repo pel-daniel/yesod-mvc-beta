@@ -2,6 +2,6 @@ module Handler.Task where
 
 import Import
 
-getTaskR :: Handler String
+getTaskR :: Handler Html
 getTaskR =
-    return "Hello world!"
+    defaultLayout $(widgetFile "task")
