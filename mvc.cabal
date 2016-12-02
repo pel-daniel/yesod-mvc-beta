@@ -21,6 +21,7 @@ library
                      Settings
                      Settings.StaticFiles
                      Handler.Home
+                     Handler.Task
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
