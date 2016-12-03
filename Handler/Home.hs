@@ -4,4 +4,6 @@ import Import
 
 getHomeR :: Handler Html
 getHomeR =
-    defaultLayout $(widgetFile "homepage")
+    do
+        tasks <- runDB $ selectList [] [Asc TaskId]
+        defaultLayout $(widgetFile "homepage")

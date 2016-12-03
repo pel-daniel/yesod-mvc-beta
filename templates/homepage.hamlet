@@ -1,7 +1,11 @@
-<div .masthead>
-    <div .container>
-        <div .row>
-            <h1 .header>
-                Yesod—a modern framework for blazing fast websites
-            <h2>
-                Fast, stable & spiced with great community
+  <div .container>
+      <div .row>
+          <h1> Yesod TODO list
+
+          $if null tasks
+              <p> Nothing left to do!
+          $else
+              <ul>
+                  $forall Entity taskId task <- tasks
+                      <li>
+                          <a href=@{TaskR taskId}> #{taskDescription task}
