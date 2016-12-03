@@ -2,5 +2,5 @@
 
 / HomeR GET
 
-/tasks/new TaskNewR GET
+/tasks/new TaskNewR GET POST
 /tasks/!#TaskId TaskR GET
