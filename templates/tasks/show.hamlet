@@ -2,3 +2,5 @@
     <div .row>
         <h1> #{taskDescription task}
         <p> Complete: #{show $ taskComplete task}
+
+        <a href=@{HomeR}> Back

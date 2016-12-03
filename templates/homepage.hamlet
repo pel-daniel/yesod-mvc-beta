@@ -1,11 +1,16 @@
-  <div .container>
-      <div .row>
-          <h1> Yesod TODO list
+<div .container>
+    <div .row>
+        <h1> Yesod TODO list
 
-          $if null tasks
-              <p> Nothing left to do!
-          $else
-              <ul>
-                  $forall Entity taskId task <- tasks
-                      <li>
-                          <a href=@{TaskR taskId}> #{taskDescription task}
+        $if null tasks
+            <p> Nothing left to do!
+        $else
+            <ul .list-group>
+                $forall Entity taskId task <- tasks
+                    <a .list-group-item href=@{TaskR taskId}>
+                        $if taskComplete task
+                            <s> #{taskDescription task}
+                        $else
+                            #{taskDescription task}
+
+        <a href=@{TaskNewR}> Create new task

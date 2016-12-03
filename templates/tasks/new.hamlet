@@ -4,4 +4,4 @@
 
         <form method="post" action=@{TaskNewR} enctype=#{enctype}>
             ^{widget}
-            <button class="btn btn-default">Create task
+            <button class="btn btn-primary">Create task
