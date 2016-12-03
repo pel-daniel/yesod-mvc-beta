@@ -1,4 +1,4 @@
-<div .masthead>
-    <div .container>
-        <div .row>
-            <h1> #{Sql.fromSqlKey taskId}
+<div .container>
+    <div .row>
+        <h1> #{taskDescription task}
+        <p> Complete: #{show $ taskComplete task}

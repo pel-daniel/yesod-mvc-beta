@@ -2,4 +2,4 @@
 Task
     description String
     complete Bool
-    deriving
+    deriving Show
