@@ -5,3 +5,4 @@
         <form method="post" action=@{TaskNewR} enctype=#{enctype}>
             ^{widget}
             <button class="btn btn-primary">Create task
+            <a class="btn btn-link" href=@{HomeR}> Cancel
